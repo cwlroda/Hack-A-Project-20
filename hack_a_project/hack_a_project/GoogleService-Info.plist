@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:349960805991:ios:788e4873bd17b54e4dbec2</string>
+	<string>1:349960805991:ios:eb7acb30e3b14d624dbec2</string>
 	<key>DATABASE_URL</key>
 	<string>https://hack-a-project.firebaseio.com</string>
 </dict>

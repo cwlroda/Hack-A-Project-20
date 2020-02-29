@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9bt-ro-fHq">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Giving Item Details Controller-->
+        <scene sceneID="iPa-ce-9Pb">
+            <objects>
+                <viewController id="9bt-ro-fHq" customClass="GivingItemDetailsController" customModule="hack_a_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JT9-8M-3k7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hez-Ol-WUb">
+                                <rect key="frame" x="16" y="48" width="151" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" layoutMarginsFollowReadableWidth="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="H52-5E-MRT">
+                                <rect key="frame" x="16" y="148" width="325" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <string key="text">jkdnflkgjndflkgjndflkgjndlkfjgndklfjgndlkfjngdlkfjgndkljfngdkljfgnkdfjgngdfkngkldjnfklgjdnflkgjdnfkljgndflkgjndflkgjndfklgjndflkjgdnfgkljdfngjkdfg</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Ac-fq-yYr">
+                                <rect key="frame" x="25" y="613" width="325" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="I want to help!">
+                                            <attributes>
+                                                <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                                <font key="NSFont" size="17" name="SFMono-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="COn-dy-K8B">
+                                <rect key="frame" x="0.0" y="270" width="375" height="335"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="fIg-5e-MTs"/>
+                    </view>
+                    <connections>
+                        <outlet property="accept_button" destination="8Ac-fq-yYr" id="ceN-NO-kG2"/>
+                        <outlet property="item_description" destination="H52-5E-MRT" id="1H1-r0-lsX"/>
+                        <outlet property="item_location" destination="COn-dy-K8B" id="YwP-1x-yGF"/>
+                        <outlet property="item_title" destination="hez-Ol-WUb" id="Nd7-d2-Lj5"/>
+                        <outlet property="map" destination="COn-dy-K8B" id="3Xe-Us-gMc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lhw-ar-7sm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>
