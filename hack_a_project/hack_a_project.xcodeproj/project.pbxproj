@@ -14,6 +14,7 @@
 		7CE35204240A7FDE00A26FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE35202240A7FDE00A26FCF /* Main.storyboard */; };
 		7CE35206240A7FE300A26FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CE35205240A7FE300A26FCF /* Assets.xcassets */; };
 		7CE35209240A7FE300A26FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CE35207240A7FE300A26FCF /* LaunchScreen.storyboard */; };
+		82AC233C240A8B71006CBEB1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82AC233B240A8B70006CBEB1 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		7CE35205240A7FE300A26FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CE35208240A7FE300A26FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CE3520A240A7FE300A26FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82AC233B240A8B70006CBEB1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC03BA47357FCB44C6C7EDFB /* Pods-hack_a_project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hack_a_project.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hack_a_project/Pods-hack_a_project.debug.xcconfig"; sourceTree = "<group>"; };
 		F0886B018F7BB96040A72C11 /* Pods_hack_a_project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hack_a_project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -70,6 +72,7 @@
 				7CE35205240A7FE300A26FCF /* Assets.xcassets */,
 				7CE35207240A7FE300A26FCF /* LaunchScreen.storyboard */,
 				7CE3520A240A7FE300A26FCF /* Info.plist */,
+				82AC233B240A8B70006CBEB1 /* GoogleService-Info.plist */,
 			);
 			path = hack_a_project;
 			sourceTree = "<group>";
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CE35209240A7FE300A26FCF /* LaunchScreen.storyboard in Resources */,
+				82AC233C240A8B71006CBEB1 /* GoogleService-Info.plist in Resources */,
 				7CE35206240A7FE300A26FCF /* Assets.xcassets in Resources */,
 				7CE35204240A7FDE00A26FCF /* Main.storyboard in Resources */,
 			);
