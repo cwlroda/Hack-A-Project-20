@@ -11,26 +11,35 @@ import FirebaseCore
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 
-class ViewController: UIViewController {
-    var db: Firestore!
+class ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+    @IBOutlet weak var field: UITextField!
+    @IBOutlet weak var pickerData: UIPickerView!
     
+    
+    var data : [String] = [String]()
+    var iconClick = true
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        // [START setup]
-        let settings = FirestoreSettings()
-
-        Firestore.firestore().settings = settings
-        // [END setup]
-        db = Firestore.firestore()
-        setDocument()
-        getDocument()
+        pickerData?.delegate = self
+        pickerData?.dataSource = self
+        data = ["Give", "Request", "Too Good To Go"]
+    }
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
     }
     
-    @IBAction func didTouchSmokeTestButton(_ sender: Any) {
-        setDocument()
-        getDocument()
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return data.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return data[row]
+    }
+    
+    @IBAction func login(_ sender: Any) {
+        let text: String = field.text ?? ""
+        Singleton.getSharedState().name = text
     }
 
     private func setDocument() {
