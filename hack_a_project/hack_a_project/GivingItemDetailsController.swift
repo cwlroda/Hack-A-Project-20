@@ -15,10 +15,10 @@ class GivingItemDetailsController: UIViewController {
     
     @IBOutlet weak var item_description: UILabel!
     
-    @IBOutlet weak var accept_button: UIButton!
+    @IBOutlet weak var help: UIButton!
     @IBOutlet weak var map: MKMapView!
     var received_title: String? = "Bananas"
-    var received_description: String? = "I'm hungry"
+    var received_description: String? = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet dui vel ex ornare accumsan. Morbi suscipit sem at magna ornare auctor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum consequat."
     var lat: CLLocationDegrees = 51.4988
     var lng: CLLocationDegrees = 0.1749
     
@@ -32,8 +32,8 @@ class GivingItemDetailsController: UIViewController {
         let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         self.map.setRegion(region, animated: true)
 //        map.add
-        accept_button.layer.cornerRadius = 20
-        accept_button.clipsToBounds = true
+        help.layer.cornerRadius = 20
+        help.clipsToBounds = true
     }
     
     

@@ -9,17 +9,18 @@
 import UIKit
 
 
-class PostAcceptController: UIViewController {
+class PostHelpController: UIViewController {
     
     @IBOutlet weak var thanku: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var connect: UIButton!
     @IBOutlet weak var back: UIButton!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.thanku.text = "We hope Wei Loon made your day a little bit better!"
+        self.thanku.text = "Thank you! You just made Wei Loon's day a little bit better!"
         let url = URL(string: "https://i.imgur.com/6gvAIe6.png"
 )!
         downloadImage(from: url)

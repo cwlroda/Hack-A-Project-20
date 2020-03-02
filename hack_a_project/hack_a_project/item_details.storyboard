@@ -115,6 +115,9 @@
                                         </fragment>
                                     </attributedString>
                                 </state>
+                                <connections>
+                                    <action selector="didTapFBWithSender:" destination="GgX-Gj-qw2" eventType="touchUpInside" id="eBu-GB-I0S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mCI-Pb-keF">
                                 <rect key="frame" x="25" y="536" width="325" height="45"/>
@@ -145,6 +148,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="pdM-9S-Jos"/>
                     <connections>
+                        <outlet property="back" destination="mCI-Pb-keF" id="oR3-dE-y8f"/>
                         <outlet property="connect" destination="FM8-u4-fQL" id="bhX-3k-2yY"/>
                         <outlet property="image" destination="SA2-oW-DMJ" id="PG5-fi-qTd"/>
                         <outlet property="thanku" destination="QHC-6B-pLA" id="orz-Pk-sow"/>
